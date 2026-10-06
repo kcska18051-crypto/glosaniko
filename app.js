@@ -27,4 +27,12 @@ function selectComponent(index) {
 }
 componentButtons.forEach((button,i) => button.addEventListener('click',()=>selectComponent(i)));
 if (componentButtons.length) selectComponent(0);
+const shadeLinks = [...document.querySelectorAll('.color-jumps a')];
+function markShadeGroup() {
+  shadeLinks.forEach(link => {
+    if (link.hash === location.hash) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  });
+}
+if (shadeLinks.length) { addEventListener('hashchange', markShadeGroup); markShadeGroup(); }
 
