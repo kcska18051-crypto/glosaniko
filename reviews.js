@@ -11,39 +11,31 @@ function openReview(review) {
   const img = viewer.querySelector('img');
   img.src = review.image;
   img.alt = `Оригинальный скриншот отзыва: ${review.author}`;
-  viewer.querySelector('a').href = review.image;
   viewer.showModal();
 }
 function reviewCard(review) {
-  const card = element('article', `customer-review review-${review.type}`);
+  const card = element('article', 'customer-review');
+  const heading = element('div', 'review-heading');
   const meta = element('div', 'review-meta');
   meta.append(element('h3', '', review.author));
   if (review.rating) {
     const stars = element('span', 'review-rating', '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating));
-    stars.setAttribute('aria-label', `${review.rating} из 5`);
+    stars.setAttribute('aria-label', review.rating + ' из 5');
     meta.append(stars);
   }
-  card.append(meta);
-  if (review.date) card.append(element('p', 'review-date', review.date));
-  card.append(element('p', 'review-product', review.color));
-  if (review.type === 'image') {
+  heading.append(meta);
+  if (review.date) heading.append(element('p', 'review-date', review.date));
+  heading.append(element('p', 'review-product', review.color));
+  card.append(heading, element('blockquote', 'review-quote', review.text));
+  if (review.type === 'image' && review.image) {
     const button = element('button', 'review-image-button');
     button.type = 'button';
-    button.setAttribute('aria-label', `Увеличить отзыв: ${review.author}`);
+    button.setAttribute('aria-label', 'Увеличить изображение отзыва: ' + review.author);
     const img = element('img');
     img.src = review.image;
-    img.alt = `Скриншот отзыва: ${review.author}`;
+    img.alt = 'Скриншот отзыва: ' + review.author;
     img.loading = 'lazy';
-    button.append(img, element('span', 'review-zoom', 'Увеличить ↗'));
-    button.addEventListener('click', () => openReview(review));
-    card.append(button);
-    const details = element('details', 'review-transcript');
-    details.append(element('summary', '', 'Текст отзыва'), element('p', '', review.text));
-    card.append(details);
-  } else {
-    card.append(element('blockquote', 'review-quote', review.text));
-    const button = element('button', 'review-source', 'Посмотреть оригинал ↗');
-    button.type = 'button';
+    button.append(img, element('span', 'review-attachment-label', 'Скриншот отзыва'));
     button.addEventListener('click', () => openReview(review));
     card.append(button);
   }
