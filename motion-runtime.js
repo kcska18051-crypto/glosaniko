@@ -56,12 +56,6 @@ function updateFrame() {
  progressBar.style.transform = `scaleX(${clamp(y / g.travel)})`;
  if (!reduceMotion.matches) {
   if (inView(g.about, y, g.height)) aboutSection.style.setProperty('--ribbon-shift', `${((g.about.top - y - g.height) * .16).toFixed(1)}px`);
-  g.cards.forEach((box, index) => {
-   if (!inView(box, y, g.height)) return;
-   const p = Math.max(-1, Math.min(1, (box.top - y + box.height * .5 - g.height * .5) / g.height));
-   productCards[index].style.setProperty('--jar-shift', `${(p * (g.width <= 700 ? 20 : 50)).toFixed(1)}px`);
-   productCards[index].style.setProperty('--jar-turn', `${(p * (index % 2 ? -7 : 7)).toFixed(2)}deg`);
-  });
   if (inView(g.palette, y, g.height)) paletteSection.style.setProperty('--palette-shift', `${Math.max(-60, Math.min(60, (g.palette.top - y - g.height * .5) * .1)).toFixed(1)}px`);
   if (g.width > 700 && inView(g.scene, y, g.height)) {
    const progress = clamp((y + g.header - g.scene.top) / Math.max(1, g.scene.height - (g.height - g.header)));
