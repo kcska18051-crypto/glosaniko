@@ -1,4 +1,6 @@
 /* Shared navigation, preserving the approved glass header and typography. */
+body .header,body.inner-page .header,body .header.is-scrolled,body.inner-page .header.is-scrolled{left:50%;width:calc(100% - 112px);max-width:1328px;transform:translateX(-50%);top:18px;transform-origin:center;border-radius:24px}
+body .header.is-scrolled,body.inner-page .header.is-scrolled{top:10px}
 body .header .header-inner{display:flex;gap:22px;justify-content:space-between;align-items:center}
 body .header #navigation{display:flex;gap:20px;align-items:center;font-size:16px}
 body .header #navigation a{white-space:nowrap}
@@ -38,3 +40,21 @@ body .header #navigation .nav-group.is-open>.nav-submenu{display:block}
 @media(prefers-reduced-motion:reduce){.submenu-toggle span{transition:none}}
 
 .footer-links{grid-template-columns:1.2fr 1fr 1fr 1.3fr}.catalog-system-visual{display:flex;align-items:flex-end;justify-content:center;gap:12px;padding:25px 15px;margin:28px 0;border-radius:24px;background:linear-gradient(125deg,#ffffff75,#ffffff08),#d0d2c8;border:1px solid #fff8;box-shadow:inset 0 1px 0 #fff8}.catalog-system-visual img{width:30%;height:240px;object-fit:contain}.catalog-system-visual img:first-child{height:300px}@media(max-width:800px){.footer-links{grid-template-columns:1fr 1fr}.catalog-system-visual img{height:170px}.catalog-system-visual img:first-child{height:220px}}
+/* Compact glass controls and contact access. */
+body .header .submenu-toggle{width:32px;height:32px;border:1px solid #ffffff12;border-radius:10px;background:linear-gradient(130deg,#ffffff0e,#ffffff03);box-shadow:inset 0 1px 0 #ffffff08}
+body .header .submenu-toggle svg{width:18px;height:18px;transition:transform .2s}
+body .header .submenu-toggle[aria-expanded=true]{color:var(--yellow);background:linear-gradient(130deg,#fecc0028,#fecc0010);border-color:#fecc0020}
+body .header .submenu-toggle[aria-expanded=true] svg{transform:rotate(180deg)}
+body .header #navigation .nav-submenu{padding:16px 12px;min-width:250px;border-radius:22px;border:1px solid #ffffff40;background:linear-gradient(125deg,#ffffff16,#ffffff04 55%,#fecc000b),#242620ed;box-shadow:inset 0 1px 0 #ffffff20,0 16px 36px #0003}
+body .header #navigation .nav-submenu a{padding:14px 16px}
+body .header .header-call{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:var(--yellow);color:#242424;flex-shrink:0;box-shadow:inset 0 1px 0 #ffffff65}
+.header-call svg{width:22px;height:22px}.header-call:hover{background:#ffda3b}
+.footer-contact-row{display:grid;grid-template-columns:1fr 1fr 1.3fr 1fr;gap:28px;padding:30px 0;border-top:1px solid #ffffff25}
+.footer-contact-row>div{display:flex;flex-direction:column;gap:12px}.footer-contact-row>div>span{font-size:14px;color:#aeb1a4}.footer-contact-row a{font-size:17px;color:#f2f2e9;line-height:1.5;overflow-wrap:anywhere}.footer-contact-row a:hover{color:var(--yellow)}
+.footer-messengers>div{display:flex;gap:10px;flex-wrap:wrap}.messenger-pending{padding:9px 12px;border:1px solid #ffffff30;border-radius:10px;font-size:15px;color:#c4c7bb;background:#ffffff08}
+.partner-contacts a{color:inherit;overflow-wrap:anywhere}.partner-contacts dl>div{flex-wrap:wrap}
+@media(max-width:1250px){body .header .menu-toggle{order:2;margin-left:auto}body .header .header-call{order:3}body .header .submenu-toggle{width:40px;height:40px}body .header #navigation .nav-submenu{min-width:0;padding:8px 12px}}
+@media(max-width:1100px){body .header,body.inner-page .header,body .header.is-scrolled,body.inner-page .header.is-scrolled{width:calc(100% - 64px)}}
+@media(max-width:800px){body .header,body.inner-page .header,body .header.is-scrolled,body.inner-page .header.is-scrolled{width:calc(100% - 40px)}.footer-contact-row{grid-template-columns:1fr 1fr;gap:24px}.footer-contact-row a{font-size:16px}}
+@media(max-width:560px){body .header,body.inner-page .header,body .header.is-scrolled,body.inner-page .header.is-scrolled{top:12px;border-radius:20px}body .header .header-call{width:40px;height:40px;border-radius:12px}.footer-contact-row{grid-template-columns:1fr;padding:25px 0}.partner-contacts dl>div{flex-direction:column;gap:10px}.footer-contact-row a{font-size:18px}}
+@media(min-width:1251px){body .header .nav-group:hover .submenu-toggle{color:var(--yellow);background:linear-gradient(130deg,#fecc0028,#fecc0010);border-color:#fecc0020}body .header .nav-group:hover .submenu-toggle svg{transform:rotate(180deg)}body .header #navigation .nav-group:hover .nav-parent>a{color:var(--yellow)}}
