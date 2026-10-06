@@ -36,3 +36,16 @@ function markShadeGroup() {
 }
 if (shadeLinks.length) { addEventListener('hashchange', markShadeGroup); markShadeGroup(); }
 
+// Highlight existing homepage destinations when following section links.
+function markGlobalSection() {
+  const links = document.querySelectorAll('#navigation a[href]');
+  links.forEach(link => {
+    const target = new URL(link.href);
+    if (target.hash && target.pathname === location.pathname) {
+      if (target.hash === location.hash) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    }
+  });
+}
+addEventListener('hashchange', markGlobalSection);
+markGlobalSection();
