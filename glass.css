@@ -1,0 +1,10 @@
+/* Shared glass surfaces: static highlights, blur only on the small header. */
+:root{--glass-edge:rgba(255,255,255,.25);--glass-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -1px 0 rgba(0,0,0,.12),0 12px 30px rgba(0,0,0,.09)}
+body .header,body.inner-page .header{background:linear-gradient(115deg,rgba(255,255,255,.12),rgba(255,255,255,.02) 45%,rgba(255,255,255,.07)),rgba(30,31,28,.9);border:1px solid var(--glass-edge);box-shadow:var(--glass-shadow);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.detail-hero .detail-purchase,.inner-page .product-feature-row>div,.inner-page .brand-values-grid article,.related-card,.component-detail,.markets>div{background:linear-gradient(125deg,rgba(255,255,255,.12),rgba(255,255,255,.015) 55%,rgba(255,255,255,.055)),rgba(43,44,40,.92);border:1px solid var(--glass-edge);box-shadow:var(--glass-shadow);color:#f2f2e9}
+.detail-hero .detail-purchase .markets>div{background:linear-gradient(130deg,#ffffff20,#ffffff05 60%),#ffffff0d;border:1px solid #ffffff25;box-shadow:inset 0 1px 0 #ffffff16}
+.facts article,.review-placeholder,.system-note,.catalog-important,.dealer-callout,.guide-step details,.detail-instruction details{background:linear-gradient(125deg,#ffffff80,#ffffff18 55%,#ffffff40),#dbdcd4;border:1px solid #ffffffaa;box-shadow:inset 0 1px 0 #fff9,0 8px 22px #20221b08}
+.markets>div>span:not(.market-icon),.related-card p,.component-detail p{color:#d0d0c7}
+.detail-hero .product-feature-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:560px){.detail-hero .product-feature-row{grid-template-columns:1fr}body .header,body.inner-page .header{backdrop-filter:none;-webkit-backdrop-filter:none;background:linear-gradient(115deg,#ffffff15,#ffffff03),#22231ff5}}
+@media(prefers-reduced-transparency:reduce){body .header,body.inner-page .header{backdrop-filter:none;-webkit-backdrop-filter:none;background:#232420}.detail-hero .detail-purchase,.markets>div{background:#30312d}}
