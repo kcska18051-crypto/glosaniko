@@ -55,15 +55,6 @@ function updateFrame() {
  if (compact !== lastCompact) { conceptHeader.classList.toggle('is-scrolled', compact); lastCompact = compact; }
  progressBar.style.transform = `scaleX(${clamp(y / g.travel)})`;
  if (!reduceMotion.matches) {
-  if (inView(g.hero, y, g.height)) {
-   const progress = clamp((y - g.hero.top) / Math.max(1, g.hero.height - g.height));
-   if (g.width > 700) heroSequence.style.setProperty('--hero-progress', progress.toFixed(3));
-   else {
-    heroSequence.style.setProperty('--mobile-hero-shift', `${Math.max(-90, -y * .12).toFixed(1)}px`);
-    heroSequence.style.setProperty('--mobile-jar-shift', `${Math.max(-40, -y * .06).toFixed(1)}px`);
-    heroSequence.style.setProperty('--mobile-jar-turn', `${Math.min(10, y * .02).toFixed(1)}deg`);
-   }
-  }
   if (inView(g.about, y, g.height)) aboutSection.style.setProperty('--ribbon-shift', `${((g.about.top - y - g.height) * .16).toFixed(1)}px`);
   g.cards.forEach((box, index) => {
    if (!inView(box, y, g.height)) return;
