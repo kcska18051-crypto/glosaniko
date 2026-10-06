@@ -11,7 +11,7 @@ document.querySelectorAll('[data-preview]').forEach(link => link.addEventListene
 }));
 document.querySelectorAll('.dialog-close, .dialog-back').forEach(button => button.addEventListener('click', () => dialog.close()));
 dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
-document.querySelector('#contact-form').addEventListener('submit', event => { event.preventDefault(); document.querySelector('.form-status').textContent = 'Это локальный макет. Данные не отправлены и не сохранены. Отправку подключим после получения контактов и согласованных документов.'; });
+document.querySelector('#contact-form').addEventListener('submit', event => { event.preventDefault(); document.querySelector('.form-status').textContent = 'Это демонстрационная версия. Данные не отправлены и не сохранены. Отправку подключим после получения контактов и согласованных документов.'; });
 const componentTexts = [
   ['Эмаль', 'Цвет и финишное покрытие — базовый материал системы Glosaniko'],
   ['Отвердитель', 'Компонент двухкомпонентной системы — используется совместно с эмалью Glosaniko'],
@@ -27,3 +27,4 @@ function selectComponent(index) {
 }
 componentButtons.forEach((button,i) => button.addEventListener('click',()=>selectComponent(i)));
 selectComponent(0);
+
