@@ -49,3 +49,31 @@ function markGlobalSection() {
 }
 addEventListener('hashchange', markGlobalSection);
 markGlobalSection();
+const navGroups = [...document.querySelectorAll('.nav-group')];
+function toggleSubmenu(group, open) {
+  group.classList.toggle('is-open', open);
+  group.querySelector('.submenu-toggle').setAttribute('aria-expanded', String(open));
+}
+navGroups.forEach(group => {
+  const button = group.querySelector('.submenu-toggle');
+  button.addEventListener('click', () => {
+    const open = !group.classList.contains('is-open');
+    navGroups.forEach(other => toggleSubmenu(other, other === group && open));
+  });
+  group.addEventListener('pointerenter', () => { if (matchMedia('(min-width:1251px)').matches) toggleSubmenu(group, true); });
+  group.addEventListener('pointerleave', () => { if (matchMedia('(min-width:1251px)').matches) toggleSubmenu(group, false); });
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('.nav-group')) navGroups.forEach(group => toggleSubmenu(group, false));
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') navGroups.forEach(group => toggleSubmenu(group, false));
+});
+menuButton.addEventListener('click', () => {
+  if (menuButton.getAttribute('aria-expanded') === 'false') navGroups.forEach(group => toggleSubmenu(group, false));
+});
+
+navGroups.forEach(group => {
+  group.addEventListener('focusin', () => { if (matchMedia('(min-width:1251px)').matches) toggleSubmenu(group, true); });
+  group.addEventListener('focusout', event => { if (!group.contains(event.relatedTarget)) toggleSubmenu(group, false); });
+});
