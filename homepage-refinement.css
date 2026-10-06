@@ -1,0 +1,29 @@
+/* Local refinements: retain the existing page composition and motion. */
+.homepage .home-review-rating{color:#806600;font-size:20px;letter-spacing:3px;margin-bottom:26px}
+.homepage .home-review-rating>span{font:inherit;color:inherit}
+.homepage .review-placeholder{display:flex;flex-direction:column}
+.homepage .review-placeholder>p{flex:1}
+.homepage .home-partner-benefits{list-style:none;padding:0;margin:28px 0 32px;display:grid;gap:14px;color:#d0d3c6;font-size:17px}
+.homepage .home-partner-benefits li{display:flex;gap:12px;line-height:1.5}
+.homepage .home-partner-benefits li:before{content:'↗';color:#fecc00}
+.homepage .home-feedback{background:#242522;color:#f2f2e9;position:relative;overflow:hidden;border-top:1px solid #ffffff20}
+.homepage .home-feedback .contact-grid{grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
+.homepage .home-feedback h2{margin-bottom:24px}
+.homepage .home-feedback-copy>p{font-size:20px;line-height:1.6;color:#d0d3c6;max-width:580px;margin-bottom:0}
+.homepage .home-feedback-art{position:relative;isolation:isolate;max-width:580px;height:360px;margin-top:35px}
+.homepage .feedback-orbit{position:absolute;width:340px;height:275px;border-radius:50%;background:#fecc00;left:35px;top:55px;transform:rotate(-15deg);z-index:-1}
+.homepage .home-feedback-art img{position:absolute;object-fit:contain;filter:drop-shadow(0 15px 12px #0004)}
+.homepage .feedback-enamel{width:340px;height:340px;left:0;top:0;transform:rotate(-6deg)}
+.homepage .feedback-hardener{width:245px;height:245px;left:235px;top:105px;transform:rotate(5deg)}
+.homepage .feedback-accent{position:absolute;right:12px;top:15px;font-size:85px;line-height:1;color:#fecc00}
+.homepage .home-feedback form{padding:42px;border-radius:30px;background:linear-gradient(125deg,#ffffff24,#ffffff05 55%,#ffffff12),#30322b;border:1px solid #ffffff45;box-shadow:inset 0 1px 0 #ffffff35,0 20px 45px #0002;min-width:0}
+.homepage .home-feedback form h3{font-size:28px;margin-bottom:30px}
+.homepage .home-feedback form label{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;color:#e5e6dc;font-size:18px}
+.homepage .home-feedback form input{padding:17px 18px;border-radius:12px;border:1px solid #ffffff40;background:#ffffff0d;color:#fff;width:100%;font-size:18px;outline-offset:4px}
+.homepage .home-feedback form input::placeholder{color:#b8bcaf}
+.homepage .home-feedback form input:focus-visible{outline:2px solid #fecc00;border-color:#fecc00}
+.homepage .home-feedback form .button{width:100%;margin-top:8px}
+.homepage .home-feedback .form-status{color:#d0d3c6;font-size:15px;margin:22px 0 0;line-height:1.5}
+.homepage .home-feedback .form-status:empty{display:none}
+@media(max-width:1100px){.homepage .home-feedback .contact-grid{gap:35px}.homepage .feedback-hardener{left:185px;width:210px;height:210px}.homepage .feedback-enamel{width:300px;height:300px}.homepage .feedback-orbit{width:280px;height:240px}.homepage .home-feedback form{padding:30px}}
+@media(max-width:800px){.homepage .home-feedback .contact-grid{grid-template-columns:1fr;gap:30px}.homepage .home-feedback-copy>p{font-size:18px}.homepage .home-feedback-art{height:290px;width:100%;max-width:400px;margin:25px auto 0}.homepage .feedback-enamel{width:270px;height:270px;left:-15px}.homepage .feedback-hardener{width:200px;height:200px;left:auto;right:-5px;top:85px}.homepage .feedback-orbit{width:255px;height:220px;left:30px;top:40px}.homepage .feedback-accent{font-size:60px;right:8px;top:5px}.homepage .home-feedback form{padding:26px;border-radius:24px}.homepage .home-feedback form h3{font-size:25px}.homepage .home-feedback form .button{gap:20px}.homepage .partners .button{gap:20px;max-width:100%}.homepage .home-partner-benefits{font-size:16px}.homepage .home-review-rating{font-size:18px}}
