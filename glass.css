@@ -8,3 +8,11 @@ body .header,body.inner-page .header{background:linear-gradient(115deg,rgba(255,
 .detail-hero .product-feature-row{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:560px){.detail-hero .product-feature-row{grid-template-columns:1fr}body .header,body.inner-page .header{backdrop-filter:none;-webkit-backdrop-filter:none;background:linear-gradient(115deg,#ffffff15,#ffffff03),#22231ff5}}
 @media(prefers-reduced-transparency:reduce){body .header,body.inner-page .header{backdrop-filter:none;-webkit-backdrop-filter:none;background:#232420}.detail-hero .detail-purchase,.markets>div{background:#30312d}}
+
+/* Consistent surfaces on every completed page. */
+body .header,body.inner-page .header{background:linear-gradient(115deg,#ffffff24,#ffffff04 48%,#ffffff12),#20221dcc}
+body .detail-hero .detail-purchase,body .product-feature-row>div,body .brand-values-grid article,body .related-card,body .component-detail,body .markets>div{background:linear-gradient(125deg,#ffffff26,#ffffff06 55%,#ffffff14),#292b26c7;border:1px solid #ffffff42;box-shadow:inset 0 1px 0 #ffffff45,inset 0 -1px 0 #0003,0 12px 28px #00000016}
+body .facts article,body .review-placeholder,body .system-note,body .catalog-important,body .dealer-callout,body .guide-step details,body .detail-instruction details,body .steps li,body .system-grid article,body .contact-form{background:linear-gradient(120deg,#ffffffb3,#ffffff38 50%,#ffffff75),#d7d9cebd;border:1px solid #ffffffb0!important;box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 #55555518,0 10px 26px #2222220a}
+body .product-card,body .product-card:first-child,body .inner-page .catalog-categories .product-card{background:linear-gradient(125deg,#ffffff70,#ffffff08 58%,#ffffff30),#cfd1cac9;border:1px solid #ffffffa6;box-shadow:inset 0 1px 0 #fff9,inset 0 -1px 0 #00000012,0 10px 26px #22222208}
+body .about .brand-values span{background:linear-gradient(120deg,#ffffff70,#ffffff18),#ffffff20;border:1px solid #ffffff8a;box-shadow:inset 0 1px 0 #fff7}
+@media(max-width:560px){body .header,body.inner-page .header{background:linear-gradient(115deg,#ffffff20,#ffffff08),#22231fe8}}
