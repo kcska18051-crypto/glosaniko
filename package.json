@@ -5,6 +5,6 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
-    "check": "node --check app.js && node --check server.mjs && node --check motion-runtime.js && node --check site-art.js && node --check reviews.js"
+    "check": "node --check app.js && node --check server.mjs && node --check motion-runtime.js && node --check site-art.js && node --check reviews.js && node --check dealers.js"
   }
 }
