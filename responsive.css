@@ -1,0 +1,23 @@
+/* Responsive layout corrections verified at 320–1440 px. */
+main h1{overflow-wrap:anywhere}
+.collection-hero-grid>*,.collection-two>*,.hero-grid>*,.about-grid>*{min-width:0}
+@media(max-width:560px){
+ .collection-hero-grid,.collection-two{grid-template-columns:minmax(0,1fr)}
+ .related-card{grid-template-columns:100px minmax(0,1fr);padding:18px;gap:12px;min-width:0}
+ .related-card img{width:100px}
+ .related-card>div{min-width:0}
+ .related-card h3,.related-card .text-link{overflow-wrap:anywhere}
+ .legal-copy{overflow-wrap:anywhere}
+}
+@media(max-width:380px){
+ .hero .hero-copy h1{font-size:clamp(32px,10.5vw,40px);letter-spacing:-1.5px}
+ .collection-hero h1{font-size:34px;letter-spacing:-1px}
+ .about-grid h2{font-size:30px;letter-spacing:-1px;overflow-wrap:anywhere}
+ .hero-copy>p,.about-grid p{max-width:100%}
+ .related-card{grid-template-columns:minmax(0,1fr)}
+ .related-card img{justify-self:center;height:170px;width:120px}
+ .purchase-tiles article{gap:14px;padding:20px}
+ .purchase-tiles h3{font-size:22px;overflow-wrap:anywhere}
+}
+
+@media(max-width:1000px){.related-grid{grid-template-columns:minmax(0,1fr)}}
