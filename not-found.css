@@ -1,4 +1,4 @@
-.error-main{background:#20221d;color:#f2f2e9;overflow:hidden;box-sizing:border-box;padding:150px 0 65px;min-height:0;display:flex;align-items:center}
+.error-main{background:#20221d;color:#f2f2e9;overflow:hidden;box-sizing:border-box;padding:200px 0 100px;min-height:0;display:flex;align-items:center}
 .error-layout{display:grid;grid-template-columns:1.15fr 1fr;gap:70px;align-items:center}
 .error-art{display:flex;align-items:center;justify-content:center;position:relative;min-width:0;padding:25px 0}
 .error-digit{font-size:clamp(100px,17vw,260px);line-height:1;font-weight:800;letter-spacing:-.09em;color:#fecc00;z-index:1}
