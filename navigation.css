@@ -65,3 +65,22 @@ body .header .purchase-menu-toggle{width:auto;height:36px;display:flex;gap:9px;p
 
 /* Full-width footer dividers, with the content kept in its shared wrap. */
 footer{container-type:inline-size;overflow:hidden}footer .footer-contact-row,footer .footer-links,footer .footer-bottom{position:relative;border-top:0}footer .footer-contact-row:before,footer .footer-links:before,footer .footer-bottom:before{content:"";position:absolute;top:0;left:50%;width:100cqw;transform:translateX(-50%);height:1px;background:#ffffff25;pointer-events:none}footer .footer-bottom:before{background:#484844}
+
+/* One mobile navigation layout, overriding legacy page-specific controls. */
+@media(max-width:1250px){
+ body .header .header-inner{width:100%;max-width:none;height:68px;padding:0 14px;gap:14px}
+ body .header .brand img{width:64px;height:50px;object-fit:contain}
+ body .header .menu-toggle{font-size:16px;line-height:1;padding:12px 0;background:transparent;border:0;color:#f2f2e9;white-space:nowrap}
+ body .header #navigation.open{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:12px;margin:0;top:calc(100% + 10px);left:0;right:0;max-height:calc(100dvh - 110px);overflow:auto;background:linear-gradient(125deg,#ffffff0d,#ffffff03),#242620;border-radius:20px}
+ body .header #navigation>.nav-group,body .header #navigation>a{width:100%;min-width:0;margin:0}
+ body .header #navigation .nav-parent{width:100%;min-height:52px;gap:8px;justify-content:space-between}
+ body .header #navigation>a,body .header #navigation .nav-parent>a{padding:14px 12px;font-size:18px;line-height:24px;margin:0;white-space:normal}
+ body .header #navigation a:after{display:none}
+ body .header #navigation .submenu-toggle{width:40px;height:40px;margin:0;flex-shrink:0;font-size:18px}
+ body .header #navigation .purchase-menu-toggle{display:flex;justify-content:space-between;align-items:center;width:100%;height:52px;padding:0 0 0 12px;gap:12px;flex-shrink:1;background:transparent;border:0;border-radius:0;box-shadow:none;text-align:left;font-size:18px;line-height:24px}
+ body .header #navigation .purchase-menu-toggle .purchase-label{white-space:nowrap;transform:none}
+ body .header #navigation .purchase-menu-toggle svg{width:40px;height:40px;flex-shrink:0;padding:10px}
+ body .header #navigation .nav-submenu{position:static;min-width:0;width:auto;margin:0 0 8px 12px;padding:4px 0 4px 10px;border:0;border-left:1px solid #ffffff30;border-radius:0;box-shadow:none;background:transparent}
+ body .header #navigation .nav-submenu a{font-size:16px;line-height:24px;padding:10px 12px;margin:0}
+}
+@media(max-width:560px){body .header .header-inner{height:64px;padding:0 12px;gap:12px}}
