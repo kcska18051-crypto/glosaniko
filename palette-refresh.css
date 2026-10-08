@@ -1,4 +1,10 @@
 /* Flat samples preserve the actual colours supplied in the client slides. */
+.inner-page .colors-intro{background-image:linear-gradient(90deg,#20211e 0%,#20211ed9 38%,#20211e90 55%,transparent 76%),url('assets/colors-fan.webp');background-size:cover;background-position:center;background-repeat:no-repeat}
+.inner-page .colors-intro:after{content:none;display:none}
+.inner-page .colors-intro h1{max-width:850px}
+.inner-page .colors-intro p{max-width:700px}
+@media(max-width:900px) and (min-width:651px){.inner-page .colors-intro h1,.inner-page .colors-intro p{max-width:65%}}
+@media(max-width:650px){.inner-page .colors-intro{padding-bottom:140px;background-size:100% 100%,auto 220px;background-position:center,right bottom;background-image:linear-gradient(180deg,#20211ef5 0%,#20211ee8 57%,#20211e60 100%),url('assets/colors-fan.webp')}.inner-page .colors-intro h1,.inner-page .colors-intro p{max-width:100%}}
 .homepage .palette:before{transform:none!important;will-change:auto;background-attachment:scroll}
 .homepage .palette-can{display:none}
 .homepage .palette .palette-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;align-items:start;margin-top:40px;padding:0 0 8px}
