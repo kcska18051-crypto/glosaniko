@@ -21,3 +21,20 @@ main h1{overflow-wrap:anywhere}
 }
 
 @media(max-width:1000px){.related-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Rounded section transitions echo the approved home positioning block. */
+.homepage #products,.homepage #colors,.homepage #buy,.homepage .home-feedback,
+.inner-page main>section:first-child+section:not(.collection-hero){
+ border-radius:48px 48px 0 0;
+ margin-top:-32px;
+ position:relative;
+ z-index:2;
+}
+.homepage .home-feedback{overflow:clip}
+@media(max-width:800px){
+ .homepage #products,.homepage #colors,.homepage #buy,.homepage .home-feedback,
+ .inner-page main>section:first-child+section:not(.collection-hero){
+  border-radius:28px 28px 0 0;
+  margin-top:-20px;
+ }
+}
