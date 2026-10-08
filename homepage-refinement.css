@@ -40,8 +40,8 @@ body.homepage .system-note{background:transparent;border:0!important;box-shadow:
 #products .home-kit-card .kit-images img{position:relative;left:auto;top:auto;width:36%;height:100%;object-fit:contain;margin:0;flex-shrink:0}
 #products .home-kit-card .kit-images img:nth-child(2){width:29%;height:70%}
 #products .home-kit-card .kit-images img:nth-child(3){width:32%;height:84%}
-@media(prefers-reduced-motion:no-preference){#products .home-kit-card.motion-visible .kit-images img{animation:kit-component-enter .65s both cubic-bezier(.2,.7,.2,1)}#products .home-kit-card.motion-visible .kit-images img:nth-child(2){animation-delay:.1s}#products .home-kit-card.motion-visible .kit-images img:nth-child(3){animation-delay:.2s}@media(hover:hover){#products .home-kit-card:hover .kit-images img{translate:0 -7px;transition:translate .25s}}}
-@keyframes kit-component-enter{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+@media(prefers-reduced-motion:no-preference){#products .home-kit-card.motion-visible .kit-images img{animation:kit-component-enter .65s both cubic-bezier(.2,.7,.2,1)}#products .home-kit-card.motion-visible .kit-images img:nth-child(2){animation-delay:.1s}#products .home-kit-card.motion-visible .kit-images img:nth-child(3){animation-delay:.2s}@media(hover:hover){#products .home-kit-card:hover .kit-images img{translate:0 -12px}}}
+@keyframes kit-component-enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:700px){#products .home-kit-card .kit-images{height:260px}#products .home-kit-card .pack-size{font-size:25px}}
 
 /* Keep the kit as one compact packshot with a shared baseline. */
@@ -50,3 +50,5 @@ body.homepage .system-note{background:transparent;border:0!important;box-shadow:
 #products .home-kit-card .kit-images img:nth-child(2){left:34%;width:33%;height:auto;bottom:-2px;z-index:2}
 #products .home-kit-card .kit-images img:nth-child(3){left:60%;width:39%;height:auto;bottom:0;z-index:1}
 @media(max-width:700px){#products .home-kit-card .kit-images{height:240px;max-width:380px}#products .home-kit-card .kit-images img{bottom:18px}#products .home-kit-card .kit-images img:nth-child(2){bottom:16px}#products .home-kit-card .kit-images img:nth-child(3){bottom:18px}}
+
+@media(prefers-reduced-motion:no-preference){#products .home-kit-card .kit-images img{transition:translate .35s cubic-bezier(.2,.7,.2,1)}#products .home-kit-card:focus-visible .kit-images img{translate:0 -12px}}
