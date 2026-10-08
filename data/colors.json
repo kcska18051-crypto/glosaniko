@@ -1,0 +1,632 @@
+[
+  {
+    "id": "base-001",
+    "name": "Баклажановый",
+    "code": "107",
+    "sku": null,
+    "group": "purple",
+    "hex": "#26111a",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_001.PNG"
+  },
+  {
+    "id": "base-002",
+    "name": "Балтика",
+    "code": "420",
+    "sku": null,
+    "group": "blue",
+    "hex": "#183448",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_002.PNG"
+  },
+  {
+    "id": "base-003",
+    "name": "Белый / серо-белый",
+    "code": "233",
+    "sku": null,
+    "group": "white",
+    "hex": "#e2dfc9",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_003.PNG"
+  },
+  {
+    "id": "base-004",
+    "name": "Белый",
+    "code": null,
+    "sku": null,
+    "group": "white",
+    "hex": "#d8d7c4",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_004.PNG"
+  },
+  {
+    "id": "base-005",
+    "name": "Белый",
+    "code": "201",
+    "sku": null,
+    "group": "white",
+    "hex": "#f3eedb",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_005.PNG"
+  },
+  {
+    "id": "base-006",
+    "name": "Белый",
+    "code": "202",
+    "sku": null,
+    "group": "white",
+    "hex": "#eafafa",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_006.PNG"
+  },
+  {
+    "id": "base-007",
+    "name": "Босфор",
+    "code": "400",
+    "sku": null,
+    "group": "blue",
+    "hex": "#0d5f83",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_007.PNG"
+  },
+  {
+    "id": "base-008",
+    "name": "Вишнёвый 02",
+    "code": "127",
+    "sku": null,
+    "group": "red",
+    "hex": "#740a0e",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_008.PNG"
+  },
+  {
+    "id": "base-009",
+    "name": "Голубой / Адриатика",
+    "code": "425",
+    "sku": null,
+    "group": "blue",
+    "hex": "#0191f2",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_009.PNG"
+  },
+  {
+    "id": "base-010",
+    "name": "Гранатовый",
+    "code": "180",
+    "sku": null,
+    "group": "red",
+    "hex": "#32070c",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_010.PNG"
+  },
+  {
+    "id": "base-011",
+    "name": "Гренадер",
+    "code": "309",
+    "sku": null,
+    "group": "red",
+    "hex": "#cc001e",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_011.PNG"
+  },
+  {
+    "id": "base-012",
+    "name": "Жёлтый",
+    "code": "1035",
+    "sku": null,
+    "group": "yellow",
+    "hex": "#fdb52e",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_012.PNG"
+  },
+  {
+    "id": "base-013",
+    "name": "Зелёный сад",
+    "code": "307",
+    "sku": null,
+    "group": "green",
+    "hex": "#12322b",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_013.PNG"
+  },
+  {
+    "id": "base-014",
+    "name": "Золотисто-жёлтый",
+    "code": "286",
+    "sku": null,
+    "group": "yellow",
+    "hex": "#fa9d28",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_014.PNG"
+  },
+  {
+    "id": "base-015",
+    "name": "Кипарис",
+    "code": "564",
+    "sku": null,
+    "group": "green",
+    "hex": "#00a15d",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_015.PNG"
+  },
+  {
+    "id": "base-016",
+    "name": "Красный",
+    "code": "1015",
+    "sku": null,
+    "group": "red",
+    "hex": "#ad0c0f",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_016.PNG"
+  },
+  {
+    "id": "base-017",
+    "name": "Медео",
+    "code": "428",
+    "sku": null,
+    "group": "blue",
+    "hex": "#2f6f85",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_017.PNG"
+  },
+  {
+    "id": "base-018",
+    "name": "Монте-Карло",
+    "code": "403",
+    "sku": null,
+    "group": "blue",
+    "hex": "#1f316d",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_018.PNG"
+  },
+  {
+    "id": "base-019",
+    "name": "Морская пучина",
+    "code": "325",
+    "sku": null,
+    "group": "green",
+    "hex": "#0f4f35",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_019.PNG"
+  },
+  {
+    "id": "base-020",
+    "name": "Мурена",
+    "code": "377",
+    "sku": null,
+    "group": "blue",
+    "hex": "#03414e",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_020.PNG"
+  },
+  {
+    "id": "base-021",
+    "name": "Океан",
+    "code": "449",
+    "sku": null,
+    "group": "blue",
+    "hex": "#004391",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_021.PNG"
+  },
+  {
+    "id": "base-022",
+    "name": "Оранжевый",
+    "code": "295",
+    "sku": null,
+    "group": "yellow",
+    "hex": "#f04a1c",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_022.PNG"
+  },
+  {
+    "id": "base-023",
+    "name": "Реклама",
+    "code": "121",
+    "sku": null,
+    "group": "red",
+    "hex": "#f50014",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_023.PNG"
+  },
+  {
+    "id": "base-024",
+    "name": "Рубин",
+    "code": "110",
+    "sku": null,
+    "group": "red",
+    "hex": "#a20311",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_024.PNG"
+  },
+  {
+    "id": "base-025",
+    "name": "Желтовато-белый / Сафари",
+    "code": "215",
+    "sku": null,
+    "group": "brown",
+    "hex": "#e8d3bc",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_025.PNG"
+  },
+  {
+    "id": "base-026",
+    "name": "Серый",
+    "code": "671",
+    "sku": null,
+    "group": "gray",
+    "hex": "#b4bfba",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_026.PNG"
+  },
+  {
+    "id": "base-027",
+    "name": "Синий",
+    "code": "1115",
+    "sku": null,
+    "group": "blue",
+    "hex": "#1d5772",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_027.PNG"
+  },
+  {
+    "id": "base-028",
+    "name": "Синяя полночь",
+    "code": "447",
+    "sku": null,
+    "group": "blue",
+    "hex": "#2a1f39",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_028.PNG"
+  },
+  {
+    "id": "base-029",
+    "name": "Такси",
+    "code": "299",
+    "sku": null,
+    "group": "yellow",
+    "hex": "#fdac2d",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_029.PNG"
+  },
+  {
+    "id": "base-030",
+    "name": "Тёмно-коричневый",
+    "code": "793",
+    "sku": null,
+    "group": "brown",
+    "hex": "#110109",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_030.PNG"
+  },
+  {
+    "id": "base-031",
+    "name": "Тёмно-синий",
+    "code": "456",
+    "sku": null,
+    "group": "blue",
+    "hex": "#1c1a26",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_031.PNG"
+  },
+  {
+    "id": "base-032",
+    "name": "Чёрный",
+    "code": "601",
+    "sku": null,
+    "group": "gray",
+    "hex": "#000000",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_032.PNG"
+  },
+  {
+    "id": "base-033",
+    "name": "Яшма",
+    "code": "140",
+    "sku": null,
+    "group": "red",
+    "hex": "#330c0d",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_033.PNG"
+  },
+  {
+    "id": "base-034",
+    "name": "Белый ГАЗ",
+    "code": "101",
+    "sku": null,
+    "group": "white",
+    "hex": "#d8d7c4",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_034.PNG"
+  },
+  {
+    "id": "base-035",
+    "name": "Шторм грей ГАЗ",
+    "code": null,
+    "sku": null,
+    "group": "gray",
+    "hex": "#747480",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_035.PNG"
+  },
+  {
+    "id": "base-036",
+    "name": "Юниор",
+    "code": null,
+    "sku": null,
+    "group": "purple",
+    "hex": "#6663c9",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_036.PNG"
+  },
+  {
+    "id": "base-037",
+    "name": "Белая ночь",
+    "code": null,
+    "sku": null,
+    "group": "white",
+    "hex": "#c0c3bb",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_037.PNG"
+  },
+  {
+    "id": "base-038",
+    "name": "Защитная / Хаки",
+    "code": "303",
+    "sku": null,
+    "group": "green",
+    "hex": "#473b1b",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_038.PNG"
+  },
+  {
+    "id": "base-039",
+    "name": "Апельсин ИЖ 28",
+    "code": null,
+    "sku": null,
+    "group": "yellow",
+    "hex": "#f57820",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_039.PNG"
+  },
+  {
+    "id": "base-040",
+    "name": "Апельсин КАМАЗ",
+    "code": null,
+    "sku": null,
+    "group": "yellow",
+    "hex": "#f6561f",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_040.PNG"
+  },
+  {
+    "id": "base-041",
+    "name": "Белый",
+    "code": "040",
+    "sku": null,
+    "group": "white",
+    "hex": "#fbfae6",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_041.PNG"
+  },
+  {
+    "id": "base-042",
+    "name": "Белый ГАЗ",
+    "code": "202",
+    "sku": null,
+    "group": "white",
+    "hex": "#e2e3e7",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_042.PNG"
+  },
+  {
+    "id": "base-043",
+    "name": "RAL 8017",
+    "code": "RAL 8017",
+    "sku": null,
+    "group": "brown",
+    "hex": "#45342c",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_043.PNG"
+  },
+  {
+    "id": "base-044",
+    "name": "RAL 5010",
+    "code": "RAL 5010",
+    "sku": null,
+    "group": "blue",
+    "hex": "#12447c",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_044.PNG"
+  },
+  {
+    "id": "base-045",
+    "name": "RAL 1033",
+    "code": "RAL 1033",
+    "sku": null,
+    "group": "yellow",
+    "hex": "#fbab22",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_045.PNG"
+  },
+  {
+    "id": "base-046",
+    "name": "Серая",
+    "code": null,
+    "sku": null,
+    "group": "gray",
+    "hex": "#8e8d88",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_046.PNG"
+  },
+  {
+    "id": "base-047",
+    "name": "RAL 9016",
+    "code": "RAL 9016",
+    "sku": null,
+    "group": "white",
+    "hex": "#f8fbf5",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_047.PNG"
+  },
+  {
+    "id": "base-048",
+    "name": "RAL 7040",
+    "code": "RAL 7040",
+    "sku": null,
+    "group": "gray",
+    "hex": "#9ea2a5",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_048.PNG"
+  },
+  {
+    "id": "base-049",
+    "name": "RAL 3020",
+    "code": "RAL 3020",
+    "sku": null,
+    "group": "red",
+    "hex": "#c2111d",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_049.PNG"
+  },
+  {
+    "id": "base-050",
+    "name": "RAL 5002",
+    "code": "RAL 5002",
+    "sku": null,
+    "group": "blue",
+    "hex": "#2b2c7b",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_050.PNG"
+  },
+  {
+    "id": "base-051",
+    "name": "Светло-серая",
+    "code": "02",
+    "sku": null,
+    "group": "gray",
+    "hex": "#b7c2bc",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_051.PNG"
+  },
+  {
+    "id": "base-052",
+    "name": "Сливочно-белая",
+    "code": "295",
+    "sku": null,
+    "group": "white",
+    "hex": "#d3ceb7",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_052.PNG"
+  },
+  {
+    "id": "base-053",
+    "name": "Светло-серая",
+    "code": null,
+    "sku": null,
+    "group": "gray",
+    "hex": "#b6c0bb",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_053.PNG"
+  },
+  {
+    "id": "base-054",
+    "name": "9005",
+    "code": "9005",
+    "sku": null,
+    "group": "gray",
+    "hex": "#09090d",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_054.PNG"
+  },
+  {
+    "id": "base-055",
+    "name": "RAL 2004",
+    "code": "RAL 2004",
+    "sku": null,
+    "group": "yellow",
+    "hex": "#e85b12",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_055.PNG"
+  },
+  {
+    "id": "base-056",
+    "name": "Синевато-зелёная",
+    "code": "394",
+    "sku": null,
+    "group": "green",
+    "hex": "#104f35",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_056.PNG"
+  },
+  {
+    "id": "base-057",
+    "name": "Toyota Super White",
+    "code": "040",
+    "sku": null,
+    "group": "white",
+    "hex": "#e9eced",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/wb glosanico первый слайд без отвердителя_057.PNG"
+  },
+  {
+    "id": "extra-001",
+    "name": "RAL 2009",
+    "code": "RAL 2009",
+    "sku": null,
+    "group": "yellow",
+    "hex": "#db5f32",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_001.PNG"
+  },
+  {
+    "id": "extra-002",
+    "name": "RAL 5005",
+    "code": "RAL 5005",
+    "sku": null,
+    "group": "blue",
+    "hex": "#00517e",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_002.PNG"
+  },
+  {
+    "id": "extra-003",
+    "name": "Ozon Blue",
+    "code": "RAL 5015",
+    "sku": null,
+    "group": "blue",
+    "hex": "#3485ca",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_003.PNG"
+  },
+  {
+    "id": "extra-004",
+    "name": "Серый графитовый",
+    "code": "RAL 7024",
+    "sku": null,
+    "group": "gray",
+    "hex": "#45494e",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_004.PNG"
+  },
+  {
+    "id": "extra-005",
+    "name": "Белый сигнальный",
+    "code": "RAL 9003",
+    "sku": null,
+    "group": "white",
+    "hex": "#efefef",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_005.PNG"
+  },
+  {
+    "id": "extra-006",
+    "name": "Агрогрин CLAAS (Seed Green)",
+    "code": null,
+    "sku": null,
+    "group": "green",
+    "hex": "#789500",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_006.PNG"
+  },
+  {
+    "id": "extra-007",
+    "name": "Белый (Sitrak C7H)",
+    "code": null,
+    "sku": null,
+    "group": "white",
+    "hex": "#f2f6f5",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_007.PNG"
+  },
+  {
+    "id": "extra-008",
+    "name": "Болотный матовый",
+    "code": null,
+    "sku": null,
+    "group": "green",
+    "hex": "#8a8b74",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_008.PNG"
+  },
+  {
+    "id": "extra-009",
+    "name": "Динго",
+    "code": "610",
+    "sku": null,
+    "group": "gray",
+    "hex": "#494949",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_009.PNG"
+  },
+  {
+    "id": "extra-010",
+    "name": "Тёмно-бежевый",
+    "code": "509",
+    "sku": null,
+    "group": "brown",
+    "hex": "#8b6f4b",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_010.PNG"
+  },
+  {
+    "id": "extra-011",
+    "name": "Торнадо",
+    "code": null,
+    "sku": null,
+    "group": "red",
+    "hex": "#9f0c26",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_011.PNG"
+  },
+  {
+    "id": "extra-012",
+    "name": "Чёрный матовый",
+    "code": null,
+    "sku": null,
+    "group": "gray",
+    "hex": "#000000",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_012.PNG"
+  },
+  {
+    "id": "extra-013",
+    "name": "Хаки матовый",
+    "code": "303",
+    "sku": null,
+    "group": "green",
+    "hex": "#4b390d",
+    "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_013.PNG"
+  }
+]
