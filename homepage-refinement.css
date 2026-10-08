@@ -32,3 +32,14 @@
 .homepage .partners h2{color:#252525}
 
 body.homepage .system-note{background:transparent;border:0!important;box-shadow:none;padding:16px 0 0;margin-top:0}body.homepage .system-note p{color:#c8cdbf;font-size:16px;line-height:1.5;margin:0}
+
+/* Three components share the same visual treatment as the product cards. */
+#products .home-kit-card{background:#deded9}
+#products .home-kit-card:before{border-radius:0!important;transform:skewY(-8deg)!important}
+#products .home-kit-card .kit-images{display:flex;align-items:flex-end;justify-content:center;gap:0;overflow:visible!important}
+#products .home-kit-card .kit-images img{position:relative;left:auto;top:auto;width:36%;height:100%;object-fit:contain;margin:0;flex-shrink:0}
+#products .home-kit-card .kit-images img:nth-child(2){width:29%;height:70%}
+#products .home-kit-card .kit-images img:nth-child(3){width:32%;height:84%}
+@media(prefers-reduced-motion:no-preference){#products .home-kit-card.motion-visible .kit-images img{animation:kit-component-enter .65s both cubic-bezier(.2,.7,.2,1)}#products .home-kit-card.motion-visible .kit-images img:nth-child(2){animation-delay:.1s}#products .home-kit-card.motion-visible .kit-images img:nth-child(3){animation-delay:.2s}@media(hover:hover){#products .home-kit-card:hover .kit-images img{translate:0 -7px;transition:translate .25s}}}
+@keyframes kit-component-enter{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+@media(max-width:700px){#products .home-kit-card .kit-images{height:260px}#products .home-kit-card .pack-size{font-size:25px}}
