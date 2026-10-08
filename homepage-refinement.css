@@ -43,3 +43,10 @@ body.homepage .system-note{background:transparent;border:0!important;box-shadow:
 @media(prefers-reduced-motion:no-preference){#products .home-kit-card.motion-visible .kit-images img{animation:kit-component-enter .65s both cubic-bezier(.2,.7,.2,1)}#products .home-kit-card.motion-visible .kit-images img:nth-child(2){animation-delay:.1s}#products .home-kit-card.motion-visible .kit-images img:nth-child(3){animation-delay:.2s}@media(hover:hover){#products .home-kit-card:hover .kit-images img{translate:0 -7px;transition:translate .25s}}}
 @keyframes kit-component-enter{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
 @media(max-width:700px){#products .home-kit-card .kit-images{height:260px}#products .home-kit-card .pack-size{font-size:25px}}
+
+/* Keep the kit as one compact packshot with a shared baseline. */
+#products .home-kit-card .kit-images{position:relative;display:block;max-width:540px;margin-inline:auto}
+#products .home-kit-card .kit-images img{position:absolute;top:auto;bottom:0;left:0;width:46%;height:auto;aspect-ratio:1;object-fit:contain}
+#products .home-kit-card .kit-images img:nth-child(2){left:34%;width:33%;height:auto;bottom:-2px;z-index:2}
+#products .home-kit-card .kit-images img:nth-child(3){left:60%;width:39%;height:auto;bottom:0;z-index:1}
+@media(max-width:700px){#products .home-kit-card .kit-images{height:240px;max-width:380px}#products .home-kit-card .kit-images img{bottom:18px}#products .home-kit-card .kit-images img:nth-child(2){bottom:16px}#products .home-kit-card .kit-images img:nth-child(3){bottom:18px}}
