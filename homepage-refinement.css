@@ -52,3 +52,10 @@ body.homepage .system-note{background:transparent;border:0!important;box-shadow:
 @media(max-width:700px){#products .home-kit-card .kit-images{height:240px;max-width:380px}#products .home-kit-card .kit-images img{bottom:18px}#products .home-kit-card .kit-images img:nth-child(2){bottom:16px}#products .home-kit-card .kit-images img:nth-child(3){bottom:18px}}
 
 @media(prefers-reduced-motion:no-preference){#products .home-kit-card .kit-images img{transition:translate .35s cubic-bezier(.2,.7,.2,1)}#products .home-kit-card:focus-visible .kit-images img{translate:0 -12px}}
+
+/* The packshot stays still; interaction belongs to its backdrop. */
+#products .home-kit-card .kit-images img,#products .home-kit-card:hover .kit-images img,#products .home-kit-card:focus-visible .kit-images img{animation:none!important;transform:none!important;translate:none!important;transition:none!important;opacity:1!important}
+#products .home-kit-card{transition:background-color .4s ease!important}
+#products .home-kit-card:before{transform:skewY(-8deg)!important;transition:transform .5s cubic-bezier(.2,.7,.2,1),background-color .4s ease!important}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){#products .home-kit-card:hover{background-color:#d1d1c9}#products .home-kit-card:hover:before{transform:translateY(-14px) skewY(-4deg)!important;background-color:#ffd829}}
+@media(prefers-reduced-motion:no-preference){#products .home-kit-card:focus-visible{background-color:#d1d1c9}#products .home-kit-card:focus-visible:before{transform:translateY(-14px) skewY(-4deg)!important;background-color:#ffd829}}
