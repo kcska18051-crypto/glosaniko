@@ -1,0 +1,539 @@
+{
+  "source": "https://docs.google.com/spreadsheets/d/1_Bhz8uFehaF21fpm3kgBRYPmm-5opuwV/edit",
+  "dealers": [
+    {
+      "id": "dealer-1",
+      "name": "ООО \"БЭЙС АВТО\"",
+      "visible": true,
+      "address": null,
+      "phone": null,
+      "website": null,
+      "shopUrl": null,
+      "logo": null
+    },
+    {
+      "id": "dealer-2",
+      "name": "ИП Хаджахмедов Р.Р.",
+      "visible": true,
+      "address": null,
+      "phone": null,
+      "website": null,
+      "shopUrl": null,
+      "logo": null
+    },
+    {
+      "id": "dealer-3",
+      "name": "ООО \"ФАБРИКА ЦВЕТА\"",
+      "visible": true,
+      "address": null,
+      "phone": null,
+      "website": null,
+      "shopUrl": null,
+      "logo": null
+    },
+    {
+      "id": "dealer-4",
+      "name": "ИП Суслов М.В.",
+      "visible": true,
+      "address": null,
+      "phone": null,
+      "website": null,
+      "shopUrl": null,
+      "logo": null
+    },
+    {
+      "id": "dealer-5",
+      "name": "ООО \"АВТОКОМПЛЕКТ\"",
+      "visible": true,
+      "address": null,
+      "phone": null,
+      "website": null,
+      "shopUrl": null,
+      "logo": null
+    },
+    {
+      "id": "dealer-6",
+      "name": "ИП Журавлева О.Н.",
+      "visible": true,
+      "address": null,
+      "phone": null,
+      "website": null,
+      "shopUrl": null,
+      "logo": null
+    },
+    {
+      "id": "dealer-7",
+      "name": "ООО \"АВТО МАКСИМУМ\"",
+      "visible": true,
+      "address": null,
+      "phone": null,
+      "website": null,
+      "shopUrl": null,
+      "logo": null
+    }
+  ],
+  "regions": [
+    {
+      "id": "region-1",
+      "name": "Республика Адыгея",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-2",
+      "name": "Республика Башкортостан",
+      "dealerId": null
+    },
+    {
+      "id": "region-3",
+      "name": "Республика Бурятия",
+      "dealerId": null
+    },
+    {
+      "id": "region-4",
+      "name": "Республика Алтай",
+      "dealerId": null
+    },
+    {
+      "id": "region-5",
+      "name": "Республика Дагестан",
+      "dealerId": "dealer-2"
+    },
+    {
+      "id": "region-6",
+      "name": "Республика Ингушетия",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-7",
+      "name": "Кабардино-Балкарская Республика",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-8",
+      "name": "Республика Калмыкия",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-9",
+      "name": "Карачаево-Черкесская Республика",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-10",
+      "name": "Республика Карелия",
+      "dealerId": null
+    },
+    {
+      "id": "region-11",
+      "name": "Республика Коми",
+      "dealerId": null
+    },
+    {
+      "id": "region-12",
+      "name": "Республика Марий Эл",
+      "dealerId": null
+    },
+    {
+      "id": "region-13",
+      "name": "Республика Мордовия",
+      "dealerId": null
+    },
+    {
+      "id": "region-14",
+      "name": "Республика Саха (Якутия)",
+      "dealerId": null
+    },
+    {
+      "id": "region-15",
+      "name": "Республика Северная Осетия - Алания",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-16",
+      "name": "Республика Татарстан (Татарстан)",
+      "dealerId": null
+    },
+    {
+      "id": "region-17",
+      "name": "Республика Тыва",
+      "dealerId": null
+    },
+    {
+      "id": "region-18",
+      "name": "Удмуртская Республика",
+      "dealerId": null
+    },
+    {
+      "id": "region-19",
+      "name": "Республика Хакасия",
+      "dealerId": null
+    },
+    {
+      "id": "region-20",
+      "name": "Чеченская Республика",
+      "dealerId": "dealer-2"
+    },
+    {
+      "id": "region-21",
+      "name": "Чувашская Республика - Чувашия",
+      "dealerId": null
+    },
+    {
+      "id": "region-22",
+      "name": "Алтайский край",
+      "dealerId": null
+    },
+    {
+      "id": "region-23",
+      "name": "Краснодарский край",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-24",
+      "name": "Красноярский край",
+      "dealerId": null
+    },
+    {
+      "id": "region-25",
+      "name": "Приморский край",
+      "dealerId": "dealer-3"
+    },
+    {
+      "id": "region-26",
+      "name": "Ставропольский край",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-27",
+      "name": "Хабаровский край",
+      "dealerId": null
+    },
+    {
+      "id": "region-28",
+      "name": "Амурская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-29",
+      "name": "Архангельская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-30",
+      "name": "Астраханская область",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-31",
+      "name": "Белгородская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-32",
+      "name": "Брянская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-33",
+      "name": "Владимирская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-34",
+      "name": "Волгоградская область",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-35",
+      "name": "Вологодская область",
+      "dealerId": "dealer-4"
+    },
+    {
+      "id": "region-36",
+      "name": "Воронежская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-37",
+      "name": "Ивановская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-38",
+      "name": "Иркутская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-39",
+      "name": "Калининградская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-40",
+      "name": "Калужская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-41",
+      "name": "Камчатский край",
+      "dealerId": null
+    },
+    {
+      "id": "region-42",
+      "name": "Кемеровская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-43",
+      "name": "Кировская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-44",
+      "name": "Костромская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-45",
+      "name": "Курганская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-46",
+      "name": "Курская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-47",
+      "name": "Ленинградская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-48",
+      "name": "Липецкая область",
+      "dealerId": "dealer-5"
+    },
+    {
+      "id": "region-49",
+      "name": "Магаданская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-50",
+      "name": "Московская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-51",
+      "name": "Мурманская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-52",
+      "name": "Нижегородская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-53",
+      "name": "Новгородская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-54",
+      "name": "Новосибирская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-55",
+      "name": "Омская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-56",
+      "name": "Оренбургская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-57",
+      "name": "Орловская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-58",
+      "name": "Пензенская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-59",
+      "name": "Пермский край",
+      "dealerId": null
+    },
+    {
+      "id": "region-60",
+      "name": "Псковская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-61",
+      "name": "Ростовская область",
+      "dealerId": "dealer-1"
+    },
+    {
+      "id": "region-62",
+      "name": "Рязанская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-63",
+      "name": "Самарская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-64",
+      "name": "Саратовская область",
+      "dealerId": "dealer-6"
+    },
+    {
+      "id": "region-65",
+      "name": "Сахалинская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-66",
+      "name": "Свердловская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-67",
+      "name": "Смоленская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-68",
+      "name": "Тамбовская область",
+      "dealerId": "dealer-5"
+    },
+    {
+      "id": "region-69",
+      "name": "Тверская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-70",
+      "name": "Томская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-71",
+      "name": "Тульская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-72",
+      "name": "Тюменская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-73",
+      "name": "Ульяновская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-74",
+      "name": "Челябинская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-75",
+      "name": "Забайкальский край",
+      "dealerId": null
+    },
+    {
+      "id": "region-76",
+      "name": "Ярославская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-77",
+      "name": "г. Москва",
+      "dealerId": null
+    },
+    {
+      "id": "region-78",
+      "name": "г. Санкт-Петербург",
+      "dealerId": null
+    },
+    {
+      "id": "region-79",
+      "name": "Еврейская автономная область",
+      "dealerId": null
+    },
+    {
+      "id": "region-80",
+      "name": "Ненецкий автономный округ",
+      "dealerId": null
+    },
+    {
+      "id": "region-81",
+      "name": "Ханты-Мансийский АО - Югра",
+      "dealerId": null
+    },
+    {
+      "id": "region-82",
+      "name": "Чукотский автономный округ",
+      "dealerId": null
+    },
+    {
+      "id": "region-83",
+      "name": "Ямало-Ненецкий автономный округ",
+      "dealerId": "dealer-7"
+    },
+    {
+      "id": "region-84",
+      "name": "Республика Крым",
+      "dealerId": null
+    },
+    {
+      "id": "region-85",
+      "name": "г. Севастополь",
+      "dealerId": null
+    },
+    {
+      "id": "region-86",
+      "name": "Запорожская область",
+      "dealerId": null
+    },
+    {
+      "id": "region-87",
+      "name": "Донецкая Народная Республика",
+      "dealerId": null
+    },
+    {
+      "id": "region-88",
+      "name": "Луганская Народная Республика",
+      "dealerId": null
+    },
+    {
+      "id": "region-89",
+      "name": "Херсонская область",
+      "dealerId": null
+    }
+  ],
+  "marketplaces": [
+    {
+      "id": "wb",
+      "name": "Wildberries",
+      "url": null
+    },
+    {
+      "id": "ozon",
+      "name": "Ozon",
+      "url": null
+    },
+    {
+      "id": "ym",
+      "name": "Яндекс Маркет",
+      "url": null
+    }
+  ]
+}
