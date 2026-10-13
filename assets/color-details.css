@@ -1,0 +1,5 @@
+.shade-grid>a.shade-card{display:block;text-decoration:none;color:inherit;border-radius:24px}
+.shade-grid>a.shade-card .shade-surface{transition:box-shadow .2s,border-color .2s}
+.shade-grid>a.shade-card:hover .shade-surface,.shade-grid>a.shade-card:focus-visible .shade-surface{border-color:var(--yellow);box-shadow:0 0 0 2px var(--yellow)}
+.shade-grid>a.shade-card:focus-visible{outline:2px solid #252525;outline-offset:6px}
+.detail-shade{width:100%;aspect-ratio:1;background:var(--shade);border-radius:32px;border:1px solid #ffffff30;box-shadow:0 24px 60px #0002}
