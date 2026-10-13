@@ -9,3 +9,7 @@ body form .form-consents input[type=checkbox]{width:20px;height:20px;min-width:2
 .cookie-notice{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);width:calc(100% - 40px);max-width:900px;z-index:100;display:flex;align-items:center;gap:25px;padding:22px 26px;border-radius:20px;background:#242620;color:#f2f2e9;border:1px solid #ffffff45;box-shadow:0 10px 35px #0004}
 .cookie-notice p{font-size:14px;line-height:1.5;margin:0}.cookie-notice a{color:#fecc00;text-decoration:underline}.cookie-notice button{border:0;border-radius:12px;padding:14px 20px;background:#fecc00;color:#242424;font-weight:700;flex-shrink:0}.legal-copy{max-width:900px}.legal-copy h2{font-size:30px;margin-top:40px}.legal-copy a{text-decoration:underline}
 @media(max-width:560px){.cookie-notice{bottom:12px;padding:18px;gap:15px;align-items:flex-start;flex-direction:column}.cookie-notice button{align-self:flex-end}}
+
+body .markets .market-icon.ozon{padding:0!important}
+body .markets .market-icon.ym{background:#ffcc00!important;border-radius:14px!important}
+body .markets .market-icon.ym img{width:48px;height:48px;border-radius:0}

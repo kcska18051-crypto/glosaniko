@@ -9,6 +9,8 @@ for c in colors:
  if not candidates and code: candidates=[p for p in positions if norm(code)==norm(p['name'])]
  if not candidates and code and code.isdigit(): candidates=[p for p in positions if re.search(r'(?<!\d)'+re.escape(code)+r'(?!\d)',p['name']) and 'матов' not in p['name'].lower()]
  if not candidates: candidates=[p for p in positions if norm(name)==norm(re.sub(r'\s+\d+$','',p['name']))]
+ overrides={'extra-006':'BCPRO2072','extra-008':'BCPRO2076','extra-013':'BCPRO2067'}
+ if c['id'] in overrides:candidates=[p for p in positions if p['sku']==overrides[c['id']]]
  pos=candidates[0] if len(candidates)==1 else None
  c['sku']=pos['sku'] if pos else None;c['barcode']=pos['barcode'] if pos else None
  matched+=bool(pos)

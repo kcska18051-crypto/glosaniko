@@ -685,12 +685,12 @@
     "id": "extra-006",
     "name": "Агрогрин CLAAS (Seed Green)",
     "code": null,
-    "sku": null,
+    "sku": "BCPRO2072",
     "group": "green",
     "hex": "#789500",
     "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_006.PNG",
     "path": "colors/extra-006/",
-    "barcode": null
+    "barcode": "4673773152687"
   },
   {
     "id": "extra-007",
@@ -707,12 +707,12 @@
     "id": "extra-008",
     "name": "Болотный матовый",
     "code": null,
-    "sku": null,
+    "sku": "BCPRO2076",
     "group": "green",
     "hex": "#8a8b74",
     "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_008.PNG",
     "path": "colors/extra-008/",
-    "barcode": null
+    "barcode": "4673773152724"
   },
   {
     "id": "extra-009",
@@ -762,11 +762,11 @@
     "id": "extra-013",
     "name": "Хаки матовый",
     "code": "303",
-    "sku": "BCPRO2010",
+    "sku": "BCPRO2067",
     "group": "green",
     "hex": "#4b390d",
     "source": "/Glosaniko слайды ВБ/Слайды продажа раздельно/1. Первый слайд/Доп.слайды новые цвета/wb glosaniko первый слайд без отвердителя_013.PNG",
     "path": "colors/extra-013/",
-    "barcode": "4673747343400"
+    "barcode": "4673773152557"
   }
 ]
