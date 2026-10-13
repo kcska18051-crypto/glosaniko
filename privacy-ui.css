@@ -13,3 +13,6 @@ body form .form-consents input[type=checkbox]{width:20px;height:20px;min-width:2
 body .markets .market-icon.ozon{padding:0!important}
 body .markets .market-icon.ym{background:#ffcc00!important;border-radius:14px!important}
 body .markets .market-icon.ym img{width:48px;height:48px;border-radius:0}
+body .markets>div,body .detail-hero .detail-purchase .markets>div{min-width:0;box-sizing:border-box}
+body .markets strong,body .detail-hero .detail-purchase .markets strong{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+@media(max-width:700px){body .detail-hero .detail-purchase .markets{grid-template-columns:repeat(3,minmax(0,1fr))}body .detail-hero .detail-purchase .market-icon{width:44px!important;height:44px!important;min-width:44px;min-height:44px;flex-basis:44px}body .detail-hero .detail-purchase .market-icon.ym img{width:38px;height:38px}}
