@@ -13,3 +13,5 @@
 #application .partner-application-contacts{grid-template-columns:1fr}
 @media(max-width:700px){.guide-error-list{grid-template-columns:1fr;gap:24px}.guide-error-list p{font-size:18px}}
 @media(max-width:650px){.brand-packaging .brand-two>.text-link{grid-column:1}#palette .brand-two>div:last-child{order:-1}}
+
+.homepage #advantages .facts .feature-icon{width:56px;height:56px;box-sizing:border-box;padding:12px;background:var(--yellow);border:1px solid #25252524;border-radius:18px 18px 18px 5px;color:#252525;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
