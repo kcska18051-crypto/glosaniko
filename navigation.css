@@ -1,4 +1,7 @@
 /* Shared navigation, preserving the approved glass header and typography. */
+body .header .page-progress{z-index:0;pointer-events:none}
+body .header .header-inner{position:relative;z-index:1}
+body .header #navigation .nav-submenu{z-index:2}
 body .header,body.inner-page .header,body .header.is-scrolled,body.inner-page .header.is-scrolled{left:50%;width:calc(100% - 112px);max-width:1328px;transform:translateX(-50%);top:18px;transform-origin:center;border-radius:24px}
 body .header.is-scrolled,body.inner-page .header.is-scrolled{top:10px}
 body .header .header-inner{display:flex;gap:22px;justify-content:space-between;align-items:center}
