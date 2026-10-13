@@ -1,43 +1,24 @@
-"""Build shade pages from the approved detail layout and client palette."""
-import json
-import re
+import json,re
 from pathlib import Path
 from html import escape
-
-ROOT = Path(__file__).resolve().parents[1]
-colors = json.loads((ROOT / 'data/colors.json').read_text(encoding='utf-8'))
-template = (ROOT / 'colors/eggplant-107/index.html').read_text(encoding='utf-8')
-catalog_path = ROOT / 'colors/index.html'
-catalog = catalog_path.read_text(encoding='utf-8')
-home_path = ROOT / 'index.html'
-home = home_path.read_text(encoding='utf-8')
-for color in colors:
-    slug = 'eggplant-107' if color['id'] == 'base-001' else color['id']
-    color['path'] = f'colors/{slug}/'
-    label = escape(' '.join(filter(None, [color['name'], color['code']])))
-    if color['id'] != 'base-001':
-        page = template.replace('Баклажановый 107', label)
-        page = page.replace('Баклажановый<br>107', label)
-        page = page.replace('<dd>Баклажановый</dd>', f'<dd>{escape(color["name"])}</dd>')
-        page = page.replace('<div><dt>Код</dt><dd>107</dd></div>', f'<div><dt>Код</dt><dd>{escape(color["code"])}</dd></div>' if color['code'] else '')
-        page = re.sub(r'<div><dt>(Артикул|Штрихкод)</dt><dd>.*?</dd></div>', '', page)
-        if color.get('sku'):
-            page = page.replace('<dt>Материал</dt>', f'<dt>Артикул</dt><dd>{escape(color["sku"])}</dd></div><div><dt>Материал</dt>')
-        page = page.replace('<img src="../../assets/color-example.png" alt="Клиентский слайд оттенка '+label+'">', f'<div class="detail-shade" style="--shade:{color["hex"]}" role="img" aria-label="Образец оттенка {label}"></div>')
-        page = page.replace('Изображение предоставлено клиентом. ', '')
-        page = page.replace('</head>', '<link rel="stylesheet" href="../../assets/color-details.css?v=1"></head>')
-        folder = ROOT / color['path']
-        folder.mkdir(parents=True, exist_ok=True)
-        (folder / 'index.html').write_text(page, encoding='utf-8')
-    pattern = r'<(?:article|a) class="shade-card" id="shade-'+re.escape(color['id'])+r'"[^>]*>(.*?)</(?:article|a)>'
-    def link_card(match):
-        content = re.sub(r'<a\b[^>]*>.*?</a>', '', match[1])
-        return f'<a class="shade-card" id="shade-{color["id"]}" href="./{slug}/" aria-label="Эмаль Glosaniko — {label}">{content}</a>'
-    catalog = re.sub(pattern, link_card, catalog, flags=re.S)
-    home = home.replace(f'./colors/#shade-{color["id"]}', f'./{color["path"]}')
-if '../assets/color-details.css?v=1' not in catalog:
-    catalog = catalog.replace('</head>', '<link rel="stylesheet" href="../assets/color-details.css?v=1"></head>')
-catalog_path.write_text(catalog, encoding='utf-8')
-home_path.write_text(home, encoding='utf-8')
-(ROOT / 'data/colors.json').write_text(json.dumps(colors, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-print(f'Built {len(colors)} linked shade pages')
+root=Path.cwd(); colors=json.loads(Path('data/colors.json').read_text(encoding='utf-8')); positions=json.loads(Path('data/enamel-client-positions.json').read_text(encoding='utf-8')); template=Path('scripts/shade-product-template.html').read_text(encoding='utf-8')
+norm=lambda s:re.sub(r'[^a-zа-я0-9]','',s.lower().replace('ё','е'))
+matched=0;unmatched=[]
+for c in colors:
+ name,code=c['name'],c.get('code');label=' '.join(filter(None,[name,code])); candidates=[p for p in positions if norm(p['name'])==norm(label)]
+ if not candidates and code: candidates=[p for p in positions if norm(code)==norm(p['name'])]
+ if not candidates and code and code.isdigit(): candidates=[p for p in positions if re.search(r'(?<!\d)'+re.escape(code)+r'(?!\d)',p['name']) and 'матов' not in p['name'].lower()]
+ if not candidates: candidates=[p for p in positions if norm(name)==norm(re.sub(r'\s+\d+$','',p['name']))]
+ pos=candidates[0] if len(candidates)==1 else None
+ c['sku']=pos['sku'] if pos else None;c['barcode']=pos['barcode'] if pos else None
+ matched+=bool(pos)
+ if not pos:unmatched.append(label)
+ s=template.replace('Оранжевый 295',escape(label)).replace('<h1>Оранжевый <span>295</span></h1>','<h1>'+escape(name)+(f' <span>{escape(code)}</span>' if code else '')+'</h1>').replace('<strong>Оранжевый</strong>',f'<strong>{escape(name)}</strong>').replace('<dd>Оранжевый</dd>',f'<dd>{escape(name)}</dd>').replace('Код цвета: 295','Код цвета: '+escape(code or '')).replace('<dd>295</dd>','<dd>'+escape(code or '')+'</dd>')
+ if not code:s=s.replace('<span class="selected-shade-code">Код цвета: </span>','').replace('<div><dt>Код цвета</dt><dd></dd></div>','')
+ if pos:s=s.replace('BCPRO2006',pos['sku']).replace('4673747343363',pos['barcode'])
+ else:s=s.replace('<span class="selected-shade-code">Артикул: BCPRO2006</span>','');s=re.sub(r'<div><dt>(Артикул|Штрихкод)</dt><dd>.*?</dd></div>','',s)
+ s=s.replace('<body class="shade-product-preview',f'<body style="--product-shade:{c["hex"]}" class="shade-product-preview').replace('shade-product-preview.css?v=1','shade-product-preview.css?v=2')
+ if 'матов' in name.lower():s=s.replace('Образует ровное глянцевое покрытие','Образует ровное покрытие').replace('<h3>Глянцевое покрытие</h3>','<h3>Покрытие</h3>')
+ (root/c['path']/'index.html').write_text(s,encoding='utf-8')
+Path('data/colors.json').write_text(json.dumps(colors,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print('Generated',len(colors),'matched',matched,'unmatched IDs',[c['id'] for c in colors if not c['sku']])
