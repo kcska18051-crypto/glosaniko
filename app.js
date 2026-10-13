@@ -13,9 +13,9 @@ document.querySelectorAll('.dialog-close, .dialog-back').forEach(button => butto
 dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
 document.querySelector('#contact-form')?.addEventListener('submit', event => { event.preventDefault(); document.querySelector('.form-status').textContent = event.currentTarget.dataset.demoMessage || 'Это демонстрационная версия. Данные не отправлены и не сохранены. Отправку подключим после получения контактов и согласованных документов.'; });
 const componentTexts = [
-  ['Эмаль', 'Формирует цвет и финишное покрытие'],
-  ['Отвердитель', 'Обеспечивает корректную работу двухкомпонентной системы'],
-  ['Разбавитель', 'Помогает подготовить материал к нанесению']
+  ['Эмаль', 'Неподходящий отвердитель или разбавитель может испортить даже хорошую эмаль.'],
+  ['Отвердитель', 'Ошибка в выборе — плохая растекаемость и шагрень вместо гладкого покрытия.'],
+  ['Разбавитель', 'Ошибка в выборе — риск неровного покрытия и проблем с сушкой.']
 ];
 const componentButtons = [...document.querySelectorAll('[data-component]')];
 const componentCards = [...document.querySelectorAll('.system-grid article')];

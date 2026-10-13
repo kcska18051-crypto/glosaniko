@@ -1,0 +1,15 @@
+/* Layout support for approved client content; existing visual tokens are retained. */
+.homepage #system .system-summary{font-size:18px;line-height:1.5;color:#ccc}
+.homepage #system .system-summary strong{display:block;color:#f2f2e9;margin-bottom:10px}
+.homepage #system .system-summary p{margin:0 0 10px;font-size:18px;line-height:1.5;color:#ccc}
+.brand-packaging .brand-two{row-gap:24px}
+.brand-packaging-copy>p:last-child{margin-bottom:0}
+.brand-packaging .brand-two>.text-link{grid-column:2;justify-self:start}
+.guide-error-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px;margin-top:30px}
+.guide-error-list article{border-top:2px solid var(--yellow);padding-top:20px}
+.guide-error-list h3{font-size:21px;line-height:1.35;margin:0 0 12px}
+.guide-error-list p{font-size:19px;line-height:1.65;color:#666;margin:0}
+.guide-safety{border-top:1px solid #cecec7;scroll-margin-top:115px}
+#application .partner-application-contacts{grid-template-columns:1fr}
+@media(max-width:700px){.guide-error-list{grid-template-columns:1fr;gap:24px}.guide-error-list p{font-size:18px}}
+@media(max-width:650px){.brand-packaging .brand-two>.text-link{grid-column:1}#palette .brand-two>div:last-child{order:-1}}
