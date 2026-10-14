@@ -74,6 +74,11 @@ ARTICLES = {
     ),
 }
 
+SEO_DESCRIPTIONS = {
+    'privacy': 'Рабочий проект документа Glosaniko для согласования перед запуском обработки данных.',
+    'consent': 'Рабочий проект документа Glosaniko для согласования перед запуском обработки данных.',
+}
+
 
 def read(path):
     return path.read_text(encoding='utf-8')
@@ -98,7 +103,7 @@ def update_page(key, source):
     title, description, _ = ARTICLES[key]
     source = re.sub(r'<title>.*?</title>', f'<title>{title} — Glosaniko</title>', source, count=1)
     source = re.sub(r'<meta name="description" content="[^"]*">',
-                    f'<meta name="description" content="{description}">', source, count=1)
+                    f'<meta name="description" content="{SEO_DESCRIPTIONS.get(key, description)}">', source, count=1)
     source = re.sub(r'<main id="main">.*?</main>', article(key), source, count=1, flags=re.S)
     if '../pages.css' not in source:
         source = source.replace('<link rel="stylesheet" href="../privacy-ui.css',
