@@ -1,0 +1,22 @@
+/* Brand story: a close view of Safari 215 paint being mixed, without a product render. */
+body.inner-page .brand-hero:not(.partner-hero)::before {
+  background: linear-gradient(90deg, #191a18f5 0%, #191a18e8 43%, #191a18a0 58%, #191a1800 84%),
+    url('brand-paint-mixing-safari-215.png') center / cover no-repeat;
+}
+
+body.inner-page .brand-hero:not(.partner-hero) .brand-hero-grid {
+  grid-template-columns: minmax(0, 650px) 1fr;
+  min-height: 430px;
+}
+
+@media (max-width: 800px) {
+  body.inner-page .brand-hero:not(.partner-hero)::before {
+    background: linear-gradient(90deg, #191a18f5 0%, #191a18df 50%, #191a18a6 100%),
+      url('brand-paint-mixing-safari-215.png') 64% center / cover no-repeat;
+  }
+
+  body.inner-page .brand-hero:not(.partner-hero) .brand-hero-grid {
+    display: block;
+    min-height: 0;
+  }
+}
