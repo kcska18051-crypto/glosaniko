@@ -70,12 +70,12 @@
           email.href = `mailto:${contact.email}`;
           card.append(email);
         }
-        result.append(card, element('h3', 'Также можно купить на маркетплейсах', 'purchase-alternative-title'));
+        result.append(card);
       } else {
         result.append(element('h3', 'Дилера в выбранном регионе пока нет', 'purchase-alternative-title'));
         result.append(element('p', 'Вы можете купить продукцию Glosaniko в наших магазинах на маркетплейсах'));
+        result.append(markets(data.marketplaces, true));
       }
-      result.append(markets(data.marketplaces, true));
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) result.animate([{opacity: 0}, {opacity: 1}], {duration: 220, easing: 'ease-out'});
     });
   }).catch(() => {
