@@ -4,6 +4,7 @@
   if (!select || !result) return;
   const script = document.currentScript;
   const dataUrl = new URL('dealer-network.json', script.src);
+  dataUrl.search = new URL(script.src).search;
   const safeUrl = value => {
     if (!value) return null;
     try { const url = new URL(value); return ['https:', 'http:'].includes(url.protocol) ? url.href : null; } catch { return null; }
@@ -52,13 +53,28 @@
       if (dealer && dealer.visible !== false) {
         const card = element('article', '', 'purchase-dealer');
         card.append(element('span', 'Официальный дилер', 'purchase-dealer-label'), element('h3', dealer.name));
-        if (safeUrl(dealer.logo)) { const image = element('img'); image.src = safeUrl(dealer.logo); image.alt = dealer.name; image.className = 'purchase-dealer-logo'; card.prepend(image); }
-        if (dealer.address) card.append(element('p', dealer.address));
-        if (dealer.phone) { const phone = element('a', dealer.phone, 'purchase-dealer-contact'); phone.href = `tel:${dealer.phone.replace(/[^+\d]/g, '')}`; card.append(phone); }
-        if (safeUrl(dealer.website)) { const link = element('a', 'Сайт дилера ↗', 'purchase-dealer-contact'); link.href = safeUrl(dealer.website); link.target = '_blank'; link.rel = 'noopener noreferrer'; card.append(link); }
-        if (safeUrl(dealer.shopUrl)) { const link = element('a', 'Перейти в магазин ↗', 'button yellow'); link.href = safeUrl(dealer.shopUrl); link.target = '_blank'; link.rel = 'noopener noreferrer'; card.append(link); }
+        const contact = region.contact;
+        if (contact?.phones?.length) {
+          card.append(element('span', contact.phones.length > 1 ? 'Телефоны' : 'Телефон', 'purchase-dealer-label'));
+          contact.phones.forEach(value => {
+            const digits = value.replace(/\D/g, '');
+            const number = digits.length === 11 && digits.startsWith('8') ? `+7${digits.slice(1)}` : `+${digits}`;
+            const phone = element('a', value, 'purchase-dealer-contact');
+            phone.href = `tel:${number}`;
+            card.append(phone);
+          });
+        }
+        if (contact?.email) {
+          card.append(element('span', 'Почта', 'purchase-dealer-label'));
+          const email = element('a', contact.email, 'purchase-dealer-contact');
+          email.href = `mailto:${contact.email}`;
+          card.append(email);
+        }
         result.append(card, element('h3', 'Также можно купить на маркетплейсах', 'purchase-alternative-title'));
-      } else result.append(element('h3', 'Вы можете приобрести продукцию Glosaniko на маркетплейсах', 'purchase-alternative-title'));
+      } else {
+        result.append(element('h3', 'Дилера в выбранном регионе пока нет', 'purchase-alternative-title'));
+        result.append(element('p', 'Вы можете купить продукцию Glosaniko в наших магазинах на маркетплейсах'));
+      }
       result.append(markets(data.marketplaces, true));
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) result.animate([{opacity: 0}, {opacity: 1}], {duration: 220, easing: 'ease-out'});
     });

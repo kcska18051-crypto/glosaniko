@@ -1,539 +1,705 @@
 {
-  "source": "https://docs.google.com/spreadsheets/d/1_Bhz8uFehaF21fpm3kgBRYPmm-5opuwV/edit",
+  "source": "https://docs.google.com/spreadsheets/d/1uNY5vYKNzxY5eqH8rWss5qHUdr8kzbCl/edit",
   "dealers": [
     {
       "id": "dealer-1",
       "name": "ООО \"БЭЙС АВТО\"",
-      "visible": true,
-      "address": null,
-      "phone": null,
-      "website": null,
-      "shopUrl": null,
-      "logo": null
+      "visible": true
     },
     {
       "id": "dealer-2",
       "name": "ИП Хаджахмедов Р.Р.",
-      "visible": true,
-      "address": null,
-      "phone": null,
-      "website": null,
-      "shopUrl": null,
-      "logo": null
+      "visible": true
     },
     {
       "id": "dealer-3",
       "name": "ООО \"ФАБРИКА ЦВЕТА\"",
-      "visible": true,
-      "address": null,
-      "phone": null,
-      "website": null,
-      "shopUrl": null,
-      "logo": null
+      "visible": true
     },
     {
       "id": "dealer-4",
-      "name": "ИП Суслов М.В.",
-      "visible": true,
-      "address": null,
-      "phone": null,
-      "website": null,
-      "shopUrl": null,
-      "logo": null
+      "name": "ИП Суслов М.В. (Автоколор)",
+      "visible": true
+    },
+    {
+      "id": "dealer-8",
+      "name": "ИП Косарев И.А. (Кузов Маркет)",
+      "visible": true
+    },
+    {
+      "id": "dealer-6",
+      "name": "ИП Журавлева О.Н. (Автоэмали)",
+      "visible": true
     },
     {
       "id": "dealer-5",
       "name": "ООО \"АВТОКОМПЛЕКТ\"",
-      "visible": true,
-      "address": null,
-      "phone": null,
-      "website": null,
-      "shopUrl": null,
-      "logo": null
+      "visible": true
     },
     {
-      "id": "dealer-6",
-      "name": "ИП Журавлева О.Н.",
-      "visible": true,
-      "address": null,
-      "phone": null,
-      "website": null,
-      "shopUrl": null,
-      "logo": null
+      "id": "dealer-9",
+      "name": "ИП Паламарчук К.В. (Мир красок)",
+      "visible": true
     },
     {
       "id": "dealer-7",
       "name": "ООО \"АВТО МАКСИМУМ\"",
-      "visible": true,
-      "address": null,
-      "phone": null,
-      "website": null,
-      "shopUrl": null,
-      "logo": null
+      "visible": true
     }
   ],
   "regions": [
     {
       "id": "region-1",
       "name": "Республика Адыгея",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "la@baseavto.ru",
+        "phones": [
+          "8 (988) 706-23-80"
+        ]
+      }
     },
     {
       "id": "region-2",
       "name": "Республика Башкортостан",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-3",
       "name": "Республика Бурятия",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-4",
       "name": "Республика Алтай",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-5",
       "name": "Республика Дагестан",
-      "dealerId": "dealer-2"
+      "dealerId": "dealer-2",
+      "contact": {
+        "email": "rashid-lkm@mail.ru",
+        "phones": [
+          "8 (928) 551-02-31"
+        ]
+      }
     },
     {
       "id": "region-6",
       "name": "Республика Ингушетия",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "info@baseavto.ru",
+        "phones": [
+          "8 (962) 000-85-92"
+        ]
+      }
     },
     {
       "id": "region-7",
       "name": "Кабардино-Балкарская Республика",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "info@baseavto.ru",
+        "phones": [
+          "8 (962) 000-85-92"
+        ]
+      }
     },
     {
       "id": "region-8",
       "name": "Республика Калмыкия",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "info@baseavto.ru",
+        "phones": [
+          "8 (988) 758-87-94"
+        ]
+      }
     },
     {
       "id": "region-9",
       "name": "Карачаево-Черкесская Республика",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "info@baseavto.ru",
+        "phones": [
+          "8 (962) 000-85-92"
+        ]
+      }
     },
     {
       "id": "region-10",
       "name": "Республика Карелия",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-11",
       "name": "Республика Коми",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-12",
       "name": "Республика Марий Эл",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-13",
       "name": "Республика Мордовия",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-14",
       "name": "Республика Саха (Якутия)",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-15",
       "name": "Республика Северная Осетия - Алания",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "info@baseavto.ru",
+        "phones": [
+          "8 (962) 000-85-92"
+        ]
+      }
     },
     {
       "id": "region-16",
       "name": "Республика Татарстан (Татарстан)",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-17",
       "name": "Республика Тыва",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-18",
       "name": "Удмуртская Республика",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-19",
       "name": "Республика Хакасия",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-20",
       "name": "Чеченская Республика",
-      "dealerId": "dealer-2"
+      "dealerId": "dealer-2",
+      "contact": {
+        "email": "Rashid-lkm@mail.ru",
+        "phones": [
+          "8 (963) 590-55-53"
+        ]
+      }
     },
     {
       "id": "region-21",
       "name": "Чувашская Республика - Чувашия",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-22",
       "name": "Алтайский край",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-23",
       "name": "Краснодарский край",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "la@baseavto.ru",
+        "phones": [
+          "8 (988) 706-23-80"
+        ]
+      }
     },
     {
       "id": "region-24",
       "name": "Красноярский край",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-25",
       "name": "Приморский край",
-      "dealerId": "dealer-3"
+      "dealerId": "dealer-3",
+      "contact": {
+        "email": "info@colorfactory.ru",
+        "phones": [
+          "8 (914) 705‒99‒22"
+        ]
+      }
     },
     {
       "id": "region-26",
       "name": "Ставропольский край",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "rsn@baseavto.ru",
+        "phones": [
+          "8 (962) 429-31-51"
+        ]
+      }
     },
     {
       "id": "region-27",
       "name": "Хабаровский край",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-28",
       "name": "Амурская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-29",
       "name": "Архангельская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-30",
       "name": "Астраханская область",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "zrv@baseavto.ru",
+        "phones": [
+          "8 (962) 444- 89-59"
+        ]
+      }
     },
     {
       "id": "region-31",
       "name": "Белгородская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-32",
       "name": "Брянская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-33",
       "name": "Владимирская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-34",
       "name": "Волгоградская область",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "info@baseavto.ru",
+        "phones": [
+          "8 (988) 758-87-94"
+        ]
+      }
     },
     {
       "id": "region-35",
       "name": "Вологодская область",
-      "dealerId": "dealer-4"
+      "dealerId": "dealer-4",
+      "contact": {
+        "email": "color-auto@mail.ru",
+        "phones": [
+          "8 (8172) 53-66-68"
+        ]
+      }
     },
     {
       "id": "region-36",
       "name": "Воронежская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-37",
       "name": "Ивановская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-38",
       "name": "Иркутская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-39",
       "name": "Калининградская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-40",
       "name": "Калужская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-41",
       "name": "Камчатский край",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-42",
       "name": "Кемеровская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-43",
       "name": "Кировская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-44",
       "name": "Костромская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-45",
       "name": "Курганская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-46",
       "name": "Курская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-47",
       "name": "Ленинградская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-48",
       "name": "Липецкая область",
-      "dealerId": "dealer-5"
+      "dealerId": "dealer-8",
+      "contact": {
+        "email": "kosarev-tmb@ya.ru",
+        "phones": [
+          "8 (993) 186-63-68"
+        ]
+      }
     },
     {
       "id": "region-49",
       "name": "Магаданская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-50",
       "name": "Московская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-51",
       "name": "Мурманская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-52",
       "name": "Нижегородская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-53",
       "name": "Новгородская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-54",
       "name": "Новосибирская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-55",
       "name": "Омская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-56",
       "name": "Оренбургская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-57",
       "name": "Орловская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-58",
       "name": "Пензенская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-59",
       "name": "Пермский край",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-60",
       "name": "Псковская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-61",
       "name": "Ростовская область",
-      "dealerId": "dealer-1"
+      "dealerId": "dealer-1",
+      "contact": {
+        "email": "info@baseavto.ru",
+        "phones": [
+          "8 (938) 304-18-06"
+        ]
+      }
     },
     {
       "id": "region-62",
       "name": "Рязанская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-63",
       "name": "Самарская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-64",
       "name": "Саратовская область",
-      "dealerId": "dealer-6"
+      "dealerId": "dealer-6",
+      "contact": {
+        "email": "kam-9999@mail.ru",
+        "phones": [
+          "8 (927) 266-09-03"
+        ]
+      }
     },
     {
       "id": "region-65",
       "name": "Сахалинская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-66",
       "name": "Свердловская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-67",
       "name": "Смоленская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-68",
       "name": "Тамбовская область",
-      "dealerId": "dealer-5"
+      "dealerId": "dealer-5",
+      "contact": {
+        "email": "Autoemali@mail.ru",
+        "phones": [
+          "8 (4752) 45-47-63"
+        ]
+      }
     },
     {
       "id": "region-69",
       "name": "Тверская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-70",
       "name": "Томская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-71",
       "name": "Тульская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-72",
       "name": "Тюменская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-73",
       "name": "Ульяновская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-74",
       "name": "Челябинская область",
-      "dealerId": null
+      "dealerId": "dealer-9",
+      "contact": {
+        "email": "mir_krasok74@mail.ru",
+        "phones": [
+          "8 (351) 777-90-71"
+        ]
+      }
     },
     {
       "id": "region-75",
       "name": "Забайкальский край",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-76",
       "name": "Ярославская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-77",
       "name": "г. Москва",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-78",
       "name": "г. Санкт-Петербург",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-79",
       "name": "Еврейская автономная область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-80",
       "name": "Ненецкий автономный округ",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-81",
       "name": "Ханты-Мансийский АО - Югра",
-      "dealerId": null
+      "dealerId": "dealer-7",
+      "contact": {
+        "email": "surgutautomaximum@mail.ru",
+        "phones": [
+          "8 (3462) 556-001",
+          "8 (912) 089-95-49"
+        ]
+      }
     },
     {
       "id": "region-82",
       "name": "Чукотский автономный округ",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-83",
       "name": "Ямало-Ненецкий автономный округ",
-      "dealerId": "dealer-7"
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-84",
       "name": "Республика Крым",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-85",
       "name": "г. Севастополь",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-86",
       "name": "Запорожская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-87",
       "name": "Донецкая Народная Республика",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-88",
       "name": "Луганская Народная Республика",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     },
     {
       "id": "region-89",
       "name": "Херсонская область",
-      "dealerId": null
+      "dealerId": null,
+      "contact": null
     }
   ],
   "marketplaces": [
     {
       "id": "wb",
       "name": "Вайлдберриз",
-      "url": null
+      "url": "https://www.wildberries.ru/seller/250030123"
     },
     {
       "id": "ozon",
       "name": "Озон",
-      "url": null
+      "url": "https://www.ozon.ru/seller/neoenamele-glosaniko/"
     },
     {
       "id": "ym",
       "name": "Яндекс Маркет",
-      "url": null
+      "url": "https://market.yandex.ru/business--neoenamele-glosaniko/216469173?generalContext=t%3DshopInShop%3Bi%3D1%3Bbi%3D216469173%3B&rs=eJwzEvvEyMvBKLDwEKsEg0bHmTb1vUyXV6Q4AABThgfp&searchContext=sins_ctx"
     }
-  ]
+  ],
+  "updatedAt": "2026-10-26"
 }
