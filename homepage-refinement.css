@@ -5,7 +5,7 @@
 .homepage .review-placeholder>p{flex:1}
 .homepage .home-partner-benefits{list-style:none;padding:0;margin:28px 0 32px;display:grid;gap:14px;color:#d0d3c6;font-size:17px}
 .homepage .home-partner-benefits li{display:flex;gap:12px;line-height:1.5}
-.homepage .home-partner-benefits li:before{content:'↗';color:#fecc00}
+.homepage .home-partner-benefits li:before{content:'';display:inline-block;width:1em;height:1em;flex-shrink:0;vertical-align:-.125em;background-color:currentColor;-webkit-mask:var(--glosaniko-arrow-ne) center/contain no-repeat;mask:var(--glosaniko-arrow-ne) center/contain no-repeat;color:#fecc00}
 .homepage .home-feedback{background:#242522;color:#f2f2e9;position:relative;overflow:hidden;border-top:1px solid #ffffff20}
 .homepage .home-feedback .contact-grid{grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
 .homepage .home-feedback h2{margin-bottom:24px}
@@ -57,3 +57,6 @@ body.homepage .system-note{background:transparent;border:0!important;box-shadow:
 @media(prefers-reduced-motion:no-preference){#products .product-card:nth-child(n):focus-visible{background-color:#ebebe4}#products .product-card:nth-child(n):focus-visible:before{transform:translateY(-14px) skewY(-4deg)!important;filter:brightness(1.08)}}
 #products .product-card:nth-child(n):before{transition:transform .5s cubic-bezier(.2,.7,.2,1),filter .4s ease!important}
 @media(prefers-reduced-motion:reduce){#products .product-card:nth-child(n),#products .product-card:nth-child(n):before{transition:none!important}}
+
+/* The decorative arrow has no room beside the mobile partnership CTA. */
+@media(max-width:800px){.homepage .partners:after{content:none;display:none}}

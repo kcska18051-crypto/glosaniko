@@ -1,3 +1,49 @@
+// Use an actual vector instead of the platform-dependent north-east arrow glyph.
+(() => {
+  const ignored = 'script,style,textarea,select,svg,math,[contenteditable="true"]';
+  function replaceArrows(root) {
+    const nodes = [];
+    if (root.nodeType === Node.TEXT_NODE) nodes.push(root);
+    else {
+      if (root.nodeType !== Node.ELEMENT_NODE || root.closest(ignored)) return;
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+    }
+    nodes.forEach(node => {
+      if (!node.data.includes('\u2197') || node.parentElement?.closest(ignored)) return;
+      const parts = node.data.split(/\u2197[\uFE0E\uFE0F]?/);
+      const fragment = document.createDocumentFragment();
+      parts.forEach((part, index) => {
+        if (index) {
+          const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+          svg.setAttribute('class', 'ui-arrow-ne');
+          svg.setAttribute('viewBox', '0 0 24 24');
+          svg.setAttribute('width', '1em');
+          svg.setAttribute('height', '1em');
+          svg.setAttribute('fill', 'none');
+          svg.setAttribute('stroke', 'currentColor');
+          svg.setAttribute('stroke-width', '2');
+          svg.setAttribute('stroke-linecap', 'round');
+          svg.setAttribute('stroke-linejoin', 'round');
+          svg.setAttribute('aria-hidden', 'true');
+          svg.setAttribute('focusable', 'false');
+          const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          path.setAttribute('d', 'M5 19 19 5M5 5h14v14');
+          svg.append(path);
+          fragment.append(svg);
+        }
+        if (part) fragment.append(document.createTextNode(part));
+      });
+      node.replaceWith(fragment);
+    });
+  }
+  replaceArrows(document.body);
+  new MutationObserver(records => records.forEach(record => {
+    if (record.type === 'characterData') replaceArrows(record.target);
+    else record.addedNodes.forEach(replaceArrows);
+  })).observe(document.body, {childList: true, subtree: true, characterData: true});
+})();
+
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 function closeMenu() { navigation.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }
